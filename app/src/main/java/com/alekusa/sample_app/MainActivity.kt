@@ -17,6 +17,7 @@ class MainActivity : AppCompatActivity() {
         this.buttonClick()
         this.bloodButtonClickListener()
         this.listButtonClicklistenner()
+        this.rssButtonClicklistenner()
     }
 
     private fun buttonClickListener() {
@@ -59,6 +60,14 @@ class MainActivity : AppCompatActivity() {
         button.setOnClickListener {
             val intent = Intent(this, ListActivity::class.java)
             this.startActivity(intent)
+        }
+    }
+
+    private fun rssButtonClicklistenner() {
+        val button = findViewById<Button>(R.id.RssClickButtonID)
+        button.setOnClickListener {
+//            val intent = Intent(this, RssListActivity::class.java)
+//            this.startActivity(intent)
         }
     }
 }
